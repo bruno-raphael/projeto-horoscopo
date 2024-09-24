@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu HORÓSCOPO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/horoscopo.png" type="image/x-icon">
+</head>
+
+<body>
+    <img class="img" src="./assets/fundo1.jpg" />
+    <div class="container">
+        <h1 id="textContainer">Digite abaixo a data de seu "ANIVERSÁRIO" e descubra seu signo...</h1>
+        <div class="sign-image" id="signImage"></div>
+        <h2 id="signName"></h2> 
+    </div>
+    <div class="btn-inpt">
+        <input class="my-input" type="date" />
+        <button class="btn" onclick="showSign()">Mostrar Signo</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

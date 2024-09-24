@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 20px;
+    background-color: #000000; /* Fundo preto */
+}
+
+.img {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -2;
+    opacity: 0.7; /* Mantenha a opacidade como 0.7 para um efeito suave */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Alinhamento vertical */
+    width: 620px;
+    height: 500px;
+    margin-top: 80px;
+    background-color: rgba(10, 2, 2, 0.664); /* Fundo ligeiramente transparente */
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: #ffffff; /* Cor do texto em branco para melhor contraste */
+    padding: 30px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(50px);
+}
+
+.btn-inpt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 150px;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo ligeiramente transparente */
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.my-input {
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    width: 40%;
+    background-color: rgb(187, 181, 181);
+    outline: none;
+}
+
+.btn {
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    width: 90%;
+    height: 40px;
+    color: #fff;
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(6, 10, 29, 0.965) 9%, rgba(0, 65, 148, 0.935) 54%, rgba(0, 0, 0, 1) 100%);
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.sign-image {
+    width: 100%; 
+    height: 200px; 
+    margin-top: 20px; 
+    display: flex; /* Para garantir que a imagem seja centralizada */
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-image img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px; 
+    
+}
+
+
+#signImage {
+    display: none; /* Inicialmente escondido */
+    justify-content: center; /* Centraliza a imagem */
+    align-items: center; /* Centraliza a imagem */
+    width: 100%;
+    height: 100%; /* Ajusta a altura automaticamente */
+}
+
+#textContainer , #signName{
+    font-family: "GFS Neohellenic", sans-serif;
+}
